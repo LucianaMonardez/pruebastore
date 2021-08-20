@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.img-container {
+  background-image: url("../../../assets/images/contact-us.png");
+  height: 400px;
+  width: 400px;
+}

@@ -1,5 +1,5 @@
-import { FooterComponent } from './../footer/footer.component';
-import { HeaderComponent } from './../header/header.component';
+import { SharedModule } from './../shared/shared.module';
+
 import { BannerComponent } from './components/banner/banner/banner.component';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './components/banner/home/home.component';
@@ -12,10 +12,12 @@ import { CommonModule } from '@angular/common';
     HomeComponent,
     // HeaderComponent,
     // FooterComponent
+
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SharedModule
   ]
 })
 export class HomeModule {}

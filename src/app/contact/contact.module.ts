@@ -6,7 +6,6 @@ import {ContactRoutingModule} from './contact-routing.module';
 import {MatInputModule} from '@angular/material/input';
 
 
-
 @NgModule({
   declarations: [
     ContactComponent
@@ -17,9 +16,10 @@ import {MatInputModule} from '@angular/material/input';
     ContactRoutingModule,
     MatInputModule,
 
-
   ]
 })
 export class ContactModule {
 
 }
+
+
