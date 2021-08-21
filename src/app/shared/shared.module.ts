@@ -1,4 +1,3 @@
-
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MaterialModule } from './../material/material.module';
 
@@ -11,11 +10,8 @@ import { CommonModule } from '@angular/common';
 import { ExponentialPipe } from './pipes/exponential/exponential.pipe';
 import { HighlightDirective } from './directives/highlight/highlight.directive';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
-
-
-
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 @NgModule({
   declarations: [
@@ -24,23 +20,22 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterComponent,
     HeaderComponent,
     //DemoComponent,
-
-
-  ], exports: [
+  ],
+  exports: [
     ExponentialPipe,
     HighlightDirective,
     HeaderComponent,
     FooterComponent,
-    FontAwesomeModule
-
+    FontAwesomeModule,
   ],
   imports: [
     CommonModule,
     RouterModule,
     MaterialModule,
     FontAwesomeModule,
-
-
+    FormsModule,
+    ReactiveFormsModule,
+    MatAutocompleteModule,
   ],
 })
 export class SharedModule {}
